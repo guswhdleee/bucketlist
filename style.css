@@ -20,7 +20,7 @@ body {
     width: 448px;
     margin: 110px auto 0;
     background-color: #ffffff;
-    border-radius: 20px;
+    border-radius: 20px;    
 }
 
 header {
@@ -36,22 +36,23 @@ header h1 {
 
 main {
     border-top: 4px solid #d9d9d9;
-    background-color: #EEEEEE;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 3px gray;
-}
+    background-color: #EEEEEE;  
+    /* 배경을 준 순간, 부모 radios가 사라짐, inherit하면 상단도 꾸부러짐 */
+    border-radius: 0 0 20px 20px;  
+    box-shadow: 0 3px rgb(177, 177, 177);
+}   
 
 ul {
-    padding: 25px;
+    padding: 10px 40px; /* main과 여백 */
 }
 
 li {
     font-weight: bold;
     color: #888888;
-    margin: 28px 0;
+    margin: 15px 0;  /* li 끼리 여백 */ 
     border: 4px solid #d9d9d9;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px;  /* 글자와 border 여백 */
     background-color: white;
 }
 
